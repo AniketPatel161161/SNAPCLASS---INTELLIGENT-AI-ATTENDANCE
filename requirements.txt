@@ -15,6 +15,7 @@ bcrypt
 segno #qr maker
 pillow #image dealing library
 
-streamlit #web app framework
+streamlit #web app framework of our project
+
 
 

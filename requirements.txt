@@ -1,3 +1,5 @@
+streamlit #web app framework of our project
+
 pandas 
 numpy
 
@@ -15,7 +17,8 @@ bcrypt
 segno #qr maker
 pillow #image dealing library
 
-streamlit #web app framework of our project
 
 
 
+librosa #audio processing library
+resemblyzer

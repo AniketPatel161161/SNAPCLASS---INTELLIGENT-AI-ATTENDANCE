@@ -1,8 +1,29 @@
-.env
-.vscode
-*.pyc
-_pycache__
+# Virtual environments
 venv/
-.streamlit/
+.venv/
+env/
+.env/
+
+# Environment and secrets
+.env
+.env.*
+.streamlit/secrets.toml
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# IDE and OS files
+.vscode/
+.idea/
 .DS_Store
+Thumbs.db
+
+# Build artifacts and wheels
 dist/
+build/
+*.egg-info/
+*.whl

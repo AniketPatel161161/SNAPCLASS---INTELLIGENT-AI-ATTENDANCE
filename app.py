@@ -6,6 +6,14 @@ from src.screens.teacher_screen import teacher_screen
 from src.screens.student_screen import student_screen
 
 from src.components.dialog_auto_enroll import auto_enroll_dialog
+st.markdown("""
+    <style>
+        header[data-testid="stHeader"] {display: none;}
+        [data-testid="stToolbar"] {display: none;}
+        footer {display: none;}
+        .block-container {padding-top: 0rem;}
+    </style>
+""", unsafe_allow_html=True)
 
 def main():
     st.set_page_config(

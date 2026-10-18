@@ -1,15 +1,24 @@
-streamlit
-supabase>=2.3.0
-pandas
-numpy>=1.26.0,<2.0.0
-scikit-learn
-dlib-bin
-face_recognition_models>=0.3.0
-setuptools<81
+streamlit #web app framework of our project
+supabase
+
+pandas 
+numpy
+
+#face recognition
+scikit-learn 
+dlib
+
+git+https://github.com/ageitgey/face_recognition_models
+setuptools
+
+
 bcrypt
-segno
-Pillow
-librosa
-Resemblyzer>=0.1.4
-webrtcvad-wheels
-soundfile
+
+segno #qr maker
+pillow #image dealing library
+
+
+
+
+librosa #audio processing library
+resemblyzer

@@ -108,20 +108,18 @@ def teacher_tab_manage_subjects():
                 ("🫂", "Students", sub['total_students']),
                 ("🕰️", "Classes", sub['total_classes']),
             ]
-            def make_share_btn(current_sub):
-                def share_btn():
-                    if st.button(f"Share Code: {current_sub['name']}", key=f"share_{current_sub['subject_code']}", icon=":material/share:"):
-                        share_subject_dialog(current_sub['name'], current_sub['subject_code'])
-                    st.space()
-                return share_btn
+        def share_btn():
+            if st.button(f"Share Code: {sub['name']}", key=f"share_{sub['subject_code']}", icon=":material/share:"):
+                share_subject_dialog(sub['name'], sub['subject_code'])
+            st.space()
 
-            subject_card(
-                name = sub['name'],
-                code = sub['subject_code'],
-                section = sub['section'],
-                stats=stats,
-                footer_callback=make_share_btn(sub)
-            )
+        subject_card(
+            name = sub['name'],
+            code = sub['subject_code'],
+            section = sub['section'],
+            stats=stats,
+            footer_callback=share_btn
+        )
     else:
         st.info("NO SUBJECTS FOUND. CREATE ONE ABOVE")
 
@@ -418,7 +416,7 @@ def teacher_screen_register():
         header_dashboard()
     with c2:
         if st.button("Go back to Home", type='secondary', key='registerbackbtn', shortcut="control+backspace"):
-            st.session_state['login_type'] = None
+            st.session_state['login-type'] = None
             st.rerun()
 
 
